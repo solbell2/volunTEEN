@@ -22,10 +22,14 @@ class EventDetailsState extends State<EventDetails> {
       appBar: AppBar(
         title: Text(info.name),
         centerTitle: true,
+        backgroundColor: Colors.indigo,
         actions: [
           TextButton(
             child: Text(
-              'Sign Up'
+              'Sign Up',
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
             onPressed: () async {
               await FirebaseFirestore.instance.collection('opportunities').doc(info.id).update({
@@ -39,8 +43,20 @@ class EventDetailsState extends State<EventDetails> {
       body: Container(
         child: Column(
           children: <Widget>[
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
+              color: Colors.lightBlue[100],
+              child: Text(
+                "Description",
+                textAlign: TextAlign.center,
+                style : TextStyle(
+                  fontSize: 18,
+                )
+              )
+            ),
+
             Padding(
-              padding: EdgeInsets.all(15.0),
+              padding: EdgeInsets.symmetric(vertical: 80.0, horizontal: 150.0),
               child: Text(
                 info.description,
                 textAlign: TextAlign.center,
@@ -48,23 +64,60 @@ class EventDetailsState extends State<EventDetails> {
               ),
             ),
 
+            Container(
+                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 170.0),
+                color: Colors.lightBlue[100],
+                child: Text(
+                    "Location",
+                    textAlign: TextAlign.center,
+                    style : TextStyle(
+                      fontSize: 18,
+                    )
+                )
+            ),
+
             Padding(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
               child: Text(
-                "Location: ${info.address}",
+                "${info.address}",
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
               ),
             ),
 
+            Container(
+                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 180.0),
+                color: Colors.lightBlue[100],
+                child: Text(
+                    "Tags",
+                    textAlign: TextAlign.center,
+                    style : TextStyle(
+                      fontSize: 18,
+                    )
+                )
+            ),
+
             Padding(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
               child: Text(
-                "Tags: ${info.tags}",
+                "${info.tags}",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15),
               ),
             ),
+
+            Container(
+                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
+                color: Colors.lightBlue[100],
+                child: Text(
+                    "Date & Time",
+                    textAlign: TextAlign.center,
+                    style : TextStyle(
+                      fontSize: 18,
+                    )
+                )
+            ),
+
             Padding(
               padding: EdgeInsets.all(10.0),
               child: Text(
