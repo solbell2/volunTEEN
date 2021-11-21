@@ -51,7 +51,7 @@ class volunTEEN extends StatelessWidget {
         length: 5,
         initialIndex: 0,
         child: Scaffold(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.indigo,
           bottomNavigationBar: Container(
             margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
             decoration: BoxDecoration(
