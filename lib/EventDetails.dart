@@ -43,20 +43,21 @@ class EventDetailsState extends State<EventDetails> {
       body: Container(
         child: Column(
           children: <Widget>[
+
             Container(
-              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
-              color: Colors.lightBlue[100],
-              child: Text(
-                "Description",
-                textAlign: TextAlign.center,
-                style : TextStyle(
-                  fontSize: 18,
+                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
+                color: Colors.lightBlue[100],
+                child: Text(
+                    "Description",
+                    textAlign: TextAlign.center,
+                    style : TextStyle(
+                      fontSize: 18,
+                    )
                 )
-              )
             ),
 
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 80.0, horizontal: 150.0),
+              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
               child: Text(
                 info.description,
                 textAlign: TextAlign.center,
@@ -65,19 +66,20 @@ class EventDetailsState extends State<EventDetails> {
             ),
 
             Container(
-                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 170.0),
-                color: Colors.lightBlue[100],
                 child: Text(
                     "Location",
                     textAlign: TextAlign.center,
                     style : TextStyle(
                       fontSize: 18,
-                    )
-                )
+                    ),),
+                padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 160.0),
+                color: Colors.lightBlue[100],
             ),
 
+
+
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
+              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 75.0),
               child: Text(
                 "${info.address}",
                 textAlign: TextAlign.center,
@@ -86,19 +88,18 @@ class EventDetailsState extends State<EventDetails> {
             ),
 
             Container(
-                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 180.0),
-                color: Colors.lightBlue[100],
-                child: Text(
-                    "Tags",
-                    textAlign: TextAlign.center,
-                    style : TextStyle(
-                      fontSize: 18,
-                    )
-                )
+              child: Text(
+                "  Tags  ",
+                textAlign: TextAlign.center,
+                style : TextStyle(
+                  fontSize: 18,
+                ),),
+              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 170.0),
+              color: Colors.lightBlue[100],
             ),
 
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
+              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
               child: Text(
                 "${info.tags}",
                 textAlign: TextAlign.center,
@@ -107,7 +108,7 @@ class EventDetailsState extends State<EventDetails> {
             ),
 
             Container(
-                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
+                padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 100.0),
                 color: Colors.lightBlue[100],
                 child: Text(
                     "Date & Time",
