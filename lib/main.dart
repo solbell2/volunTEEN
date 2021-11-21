@@ -69,23 +69,23 @@ class volunTEEN extends StatelessWidget {
                 // ),
                 Tab(
                   // text: 'Discover',
-                  icon: Icon(Icons.home),
+                  icon: Icon(Icons.search),
+                ),
+                Tab(
+                  // text: 'Opportunities',
+                  icon: Icon(Icons.list),
+                ),
+                Tab(
+                  // text: 'Create',
+                  icon: Icon(Icons.add),
                 ),
                 Tab(
                   // text: 'Home',
                   icon: Icon(Icons.home),
                 ),
                 Tab(
-                  // text: 'Community',
-                  icon: Icon(Icons.home),
-                ),
-                Tab(
-                  // text: 'Community',
-                  icon: Icon(Icons.home),
-                ),
-                Tab(
-                  // text: 'Community',
-                  icon: Icon(Icons.home),
+                  // text: 'Profile',
+                  icon: Icon(Icons.person),
                 ),
               ],
             ),
