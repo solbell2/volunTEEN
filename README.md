@@ -1,4 +1,4 @@
-# hackathon_11_21_21
+# Metrohacks Hackaton: 11/21/21
 
 Volunteering app made at Metro Hacks
 
