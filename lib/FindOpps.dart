@@ -25,6 +25,7 @@ class FindOppsState extends State<FindOpps> {
       appBar: AppBar(
         title: Text('Find Opportunities'),
         centerTitle: true,
+        backgroundColor: Colors.indigo,
       ),
       body: FutureBuilder(
         future: getOpps(),
@@ -65,6 +66,7 @@ class FindOppsState extends State<FindOpps> {
           return Card(
             child: ListTile(
               title: Text(opps[i].name),
+              tileColor: Colors.orange[100],
               subtitle: Text("${opps[i].dateTime}\n${opps[i].address}\nParticipants: ${opps[i].participants.split(', ').length-1}\n${opps[i].tags}"),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => EventDetails(info: opps[i])));
