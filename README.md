@@ -2,6 +2,11 @@
 By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 [Devpost Metrohacks Site](https://devpost.com/software/volunteen-7s5nmj)
 
+
+### Execution
+To execute the project, download the code on the main master branch and unzip the folder. Open Android Studio -> File -> Open, and find the extracted folder (This should have an Android logo on the file). Make sure to have Dart SDK and any Flutter comilation plugins/SDKs required to run the project (Prefered versions: Flutter v2.2.1 and Dart 2.13.1). To preview the code, please locate the code specifications and dependency installations below. 
+
+
 ### Code Specifications:
 Flutter project location is under libs. This holds all of the code we created. 
 ```file
