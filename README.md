@@ -57,6 +57,7 @@ This project is a Flutter application that allows a community to create local vo
 A few resources for Flutter Documentation: 
 - [Flutter Documentation Getting Started](https://flutter.dev/docs/get-started/codelab)
 - [Flutter Sample Cookbook](https://flutter.dev/docs/cookbook)
+- [Flutter Installation Stable (2.2.1)](https://docs.flutter.dev/development/tools/sdk/releases)
 
 Official Flutter Documentation,
 [online documentation](https://flutter.dev/docs), offers tutorials,
