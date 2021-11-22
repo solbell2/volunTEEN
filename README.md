@@ -4,10 +4,13 @@ By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 
 
 ### Execution
-To execute the project, download the code on the main master branch and unzip the folder. Open Android Studio -> File -> Open, and find the extracted folder (This should have an Android logo on the file). Make sure to have Dart SDK and any Flutter comilation plugins/SDKs required to run the project (Prefered versions: Flutter v2.2.1 and Dart 2.13.1). Ensure that full Flutter and Dart support is available on your machine and Android Studio (Android Studio Plugin Installation: File -> Settings -> Editor -> Plugins -> Marketplace -> Flutter -> Install)
+To execute the project, download the code on the main master branch and unzip the folder. Open Android Studio -> File -> Open, and find the extracted folder (This should have an Android logo on the file). Make sure to have Dart SDK and any Flutter comilation plugins/SDKs required to run the project (Prefered versions: Flutter v2.2.1 and Dart 2.13.1). Ensure that full Flutter and Dart support is available on your machine and Android Studio (Android Studio Plugin Installation: File -> Settings -> Editor -> Plugins -> Marketplace -> Flutter -> Install). Additional support and any potential issues are discussed below.
 
 Dart and Flutter Support: Dart support must be enabled on the project. To do this, install Dart support by installing Flutter located on the Flutter site and installing the Flutter plugin on Android Studio. The SDK should be in .zip located in the ../bin. Once everything is setup, you should be prompted by a blue overlay to enable Dart support unless it is already enabled. From there, a 'pub.get has not been run' message might appear. From there just ignore the message and debug on an emulator as the required pub dependencies will installed automatically on compilation. To preview the code, please locate the code specifications and dependency installations below. 
 
+If the application crashed on startup and the error is due to something related to geological.dart, please allow locational access to the application when prompted to or change it in settings and go to the emulator settings and set a location (Three Dots -> Location -> Select Your Point on map -> Set Location). From there, close out of the app and rerun. (Do not rebuild/recompile as the location will be wiped. Just exit the app and press the icon again on the emulator)
+
+Any unexpected erros may occur due to emulator discongruency or depreciated imports. (Emulators used in debugging are sdkgphone x86 arm (mobile) and Android Emulator Pixel 3a API 30 x86) Please use the ones discribed below and their specific versions. This should be imported directly by default on compilation of the app. Additional information about dependencies located below. 
 
 ### Code Specifications:
 Flutter project location is under libs. This holds all of the code we created. 
