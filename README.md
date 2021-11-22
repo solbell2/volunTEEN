@@ -2,6 +2,7 @@
 By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 [Devpost Metrohacks Site](https://devpost.com/software/volunteen-7s5nmj)
 
+### Developers and Resources: 
 <h5> Resources<br />
   
 - [App Showcase -  YouTube](https://youtu.be/icZ8hjPbFew)<br />
