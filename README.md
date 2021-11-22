@@ -12,6 +12,6 @@ A few resources for Flutter Documentation:
 - [Flutter Documentation Getting Started](https://flutter.dev/docs/get-started/codelab)
 - [Flutter Sample Cookbook](https://flutter.dev/docs/cookbook)
 
-Official Flutter Documentation
-[online documentation](https://flutter.dev/docs), which offers tutorials,
+Official Flutter Documentation,
+[online documentation](https://flutter.dev/docs), offers tutorials,
 samples, guidance on mobile development, and a full API reference.
