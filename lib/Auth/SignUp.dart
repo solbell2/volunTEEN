@@ -15,6 +15,8 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset : false,
+
       body: Container(
         margin: EdgeInsets.fromLTRB(10, 20, 10, 20),
         child: Column(
@@ -23,100 +25,138 @@ class SignUp extends StatelessWidget {
             //   height: 100,
             //   image: AssetImage('assets/Transparent Logo.png'),
             // ),
-            TextField(
-              obscureText: false,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Username'
-              ),
-              onChanged: (String val) async {
-                user = val;
-              },
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+              child:Text("Sign Up!",style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold)),
             ),
-            TextField(
-              obscureText: false,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Email'
-              ),
-              onChanged: (String val) async {
-                email = val;
-              },
-            ),
-            TextField(
-              obscureText: true,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Password'
-              ),
-              onChanged: (String val) async {
-                pass = val;
-              },
-            ),
-            TextField(
-              obscureText: true,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Re-enter Password'
-              ),
-              onChanged: (String val) async {
-                rePass = val;
-              },
-            ),
-            TextField(
-              obscureText: true,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Zip Code (Optional)'
-              ),
-              onChanged: (String val) async {
-                zipcode = val;
-              },
-            ),
-            ButtonTheme(
-              child: ElevatedButton(
-                child: Text(
-                  'Sign Up',
-                  style: TextStyle(fontSize: 30.0, backgroundColor: Colors.blue, color: Colors.white),
+
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+              child: TextField(
+                obscureText: false,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Username'
                 ),
-                onPressed: () async {
-                  if (pass == rePass) {
-                    try {
-                      UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-                        email: email,
-                        password: pass,
-                      );
-                      FirebaseFirestore.instance.collection('users').doc(user).set({
-                        'username': user,
-                        'email': email,
-                        'password': pass,
-                        'hours': 0,
-                        'zipcode': zipcode
-                      });
-                      Utilities.save('user', user);
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => volunTEEN()));
-                    } on FirebaseAuthException catch (e) {
-                      if (e.code == 'weak-password') {
-                        Utilities.displayAlert('Weak Password', 'Please ensure the password you entered has at least 6 characters.', context);
-                      } else if (e.code == 'email-already-in-use') {
-                        Utilities.displayAlert('Duplicate Email', 'An account with this email already exists. Please login into that account or sign up with a different email.', context);
-                      }
-                    } catch (e) {
-                      Utilities.displayAlert('Error', e.toString(), context);
-                    }
-                  }
-                  else {
-                    Utilities.displayAlert('Passwords are Different', 'The passwords you entered are different. Please change them so that they are the same.', context);
-                  }
+                onChanged: (String val) async {
+                  user = val;
                 },
               ),
+            ),
+
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+              child:TextField(
+                obscureText: false,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Email'
+                ),
+                onChanged: (String val) async {
+                  email = val;
+                },
+              ),
+            ),
+
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+              child:TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Password'
+                ),
+                onChanged: (String val) async {
+                  pass = val;
+                },
+              ),
+            ),
+
+
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+              child:TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Re-enter Password'
+                ),
+                onChanged: (String val) async {
+                  rePass = val;
+                },
+              ),
+            ),
+
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+              child:TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Zip Code (Optional)'
+                ),
+                onChanged: (String val) async {
+                  zipcode = val;
+                },
+              ),
+            ),
+
+            ButtonTheme(
+              child:Padding(
+                padding: EdgeInsets.symmetric(vertical: 25.0, horizontal: 25.0),
+                child: ElevatedButton(
+                  child: Text(
+                    '                      Sign Up                     ',
+                    style: TextStyle(fontSize: 20.0, backgroundColor: Colors.blue, color: Colors.white),
+                  ),
+                  onPressed: () async {
+                    if (pass == rePass) {
+                      try {
+                        UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+                          email: email,
+                          password: pass,
+                        );
+                        FirebaseFirestore.instance.collection('users').doc(user).set({
+                          'username': user,
+                          'email': email,
+                          'password': pass,
+                          'hours': 0,
+                          'zipcode': zipcode
+                        });
+                        Utilities.save('user', user);
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => volunTEEN()));
+                      } on FirebaseAuthException catch (e) {
+                        if (e.code == 'weak-password') {
+                          Utilities.displayAlert('Weak Password', 'Please ensure the password you entered has at least 6 characters.', context);
+                        } else if (e.code == 'email-already-in-use') {
+                          Utilities.displayAlert('Duplicate Email', 'An account with this email already exists. Please login into that account or sign up with a different email.', context);
+                        }
+                      } catch (e) {
+                        Utilities.displayAlert('Error', e.toString(), context);
+                      }
+                    }
+                    else {
+                      Utilities.displayAlert('Passwords are Different', 'The passwords you entered are different. Please change them so that they are the same.', context);
+                    }
+                  },
+                ),
+              ),
+
             ),
             Spacer(),
             ButtonTheme(
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.transparent,
+                  shadowColor: Colors.transparent,
+                ),
                 child: Text(
-                  'Already have an account? Log in!',
-                  style: TextStyle(fontSize: 18.0, backgroundColor: Colors.white, color: Colors.black),
+                  'Already Have an Account? Login!',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    backgroundColor: Colors.transparent,
+                    color: Colors.black,
+                  ),
                 ),
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) => Login()));
