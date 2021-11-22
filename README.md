@@ -7,7 +7,7 @@ By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 - [Final Source Code - GitHub](https://github.com/kelseyxsun/volunTEEN)<br />
 - [Volunteen Documentation](https://github.com/kelseyxsun/volunTEEN/blob/master/README.md)<br/>
 
-  <h6> Developers </h6>
+  <h6> Developers
   Younger than 18 years old (< 18): </br>
 - [Michael Liu (Freshman)](https://devpost.com/bearr) <br />
 - [Kelsey Sun (Junior)](https://devpost.com/kelseysun13) <br />
