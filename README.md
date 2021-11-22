@@ -4,7 +4,7 @@ By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 
 
 ### Execution
-To execute the project, download the code on the main master branch and unzip the folder. Open Android Studio -> File -> Open, and find the extracted folder (This should have an Android logo on the file). Make sure to have Dart SDK and any Flutter comilation plugins/SDKs required to run the project (Prefered versions: Flutter v2.2.1 and Dart 2.13.1). To preview the code, please locate the code specifications and dependency installations below. 
+To execute the project, download the code on the main master branch and unzip the folder. Open Android Studio -> File -> Open, and find the extracted folder (This should have an Android logo on the file). Make sure to have Dart SDK and any Flutter comilation plugins/SDKs required to run the project (Prefered versions: Flutter v2.2.1 and Dart 2.13.1). Dart support must be enabled. Install Dart support by installing Flutter located on the Flutter site. The SDK should be in .zip located in the ../bin. To preview the code, please locate the code specifications and dependency installations below. 
 
 
 ### Code Specifications:
