@@ -1,10 +1,42 @@
 # Metrohacks Hackaton: 11/21/21 - Volunteering App at Metrohacks
 By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang
 
-### Code Location:
+### Code Specifications:
 Flutter project location is under libs. This holds all of the code we created. 
 ```file
- ../volunTEEN/lib/
+../volunTEEN/lib/
+```
+
+Additional Dependencies Located in pubspec.yaml.
+```yaml
+name: hackathon_11_21_21
+description: Volunteering app made at Metro Hacks
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.7
+  date_format: ^2.0.4
+  google_maps_flutter: ^2.0.9
+  geolocator: ^7.7.1
+  geocoding: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  firebase_core:
+  firebase_auth:
+  cloud_firestore:
+  firebase_storage:
+  
+flutter:
+  uses-material-design: true
+
 ```
 
 ## Flutter Resources
