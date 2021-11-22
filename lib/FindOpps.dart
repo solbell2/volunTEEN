@@ -64,9 +64,10 @@ class FindOppsState extends State<FindOpps> {
         itemCount: opps.length,
         itemBuilder: (context, i) {
           return Card(
+            margin: new EdgeInsets.all(8),
             child: ListTile(
               title: Text(opps[i].name),
-              tileColor: Colors.orange[100],
+              tileColor: Colors.amber[200],
               subtitle: Text("${opps[i].dateTime}\n${opps[i].address}\nParticipants: ${opps[i].participants.split(', ').length-1}\n${opps[i].tags}"),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => EventDetails(info: opps[i])));
