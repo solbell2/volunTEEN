@@ -1,6 +1,6 @@
 # Metrohacks Hackaton: 11/21/21
 
-<p5> Volunteering app made at Metro Hacks </p5>
+<p3> Volunteering app made at Metro Hacks </p3>
 
 By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang
 
