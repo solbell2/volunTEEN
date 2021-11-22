@@ -12,7 +12,7 @@ class FindOppsState extends State<FindOpps> {
 
   var segmentVal = 1;
   final Map<int, Widget> segmentTabs = const <int, Widget>{
-    0: Text('In Person'),
+    0: Text('Physical'),
     1: Text('Virtual')
   };
 
@@ -27,21 +27,28 @@ class FindOppsState extends State<FindOpps> {
         centerTitle: true,
         backgroundColor: Colors.indigo,
       ),
+
       body: FutureBuilder(
         future: getOpps(),
         builder: (context, snapshot) {
           if (oppsLoaded) {
             return Container(
+
               child: Column(
+
                 children: <Widget>[
-                  CupertinoSlidingSegmentedControl(
-                    groupValue: segmentVal,
-                    children: segmentTabs,
-                    onValueChanged: (i) {
-                      setState(() {
-                        segmentVal = i.hashCode;
-                      });
-                    },
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+                    child:CupertinoSlidingSegmentedControl(
+
+                      groupValue: segmentVal,
+                      children: segmentTabs,
+                      onValueChanged: (i) {
+                        setState(() {
+                          segmentVal = i.hashCode;
+                        });
+                      },
+                    ),
                   ),
                   segmentVal == 0 ? setupInPerson() : setupVirtual()
                 ],
