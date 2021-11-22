@@ -49,6 +49,7 @@ class CreateOppState extends State<CreateOpp> {
       appBar: AppBar(
         title: Text('Create an Opportunity'),
         centerTitle: true,
+        backgroundColor: Colors.indigo,
       ),
       body: Container(
         child: SingleChildScrollView(
@@ -62,14 +63,12 @@ class CreateOppState extends State<CreateOpp> {
                 onChanged: (String val) async {
                   name = val;
                 },
-                style: TextStyle(
-                  color: Colors.red
-                ),
               ),
               InkWell(
                 onTap: () {
                   _selectDate(context);
                 },
+                focusColor: Colors.blue[200],
                 child: Container(
                   width: MediaQuery.of(context).size.width / 1.7,
                   height: MediaQuery.of(context).size.height / 9,
@@ -141,8 +140,11 @@ class CreateOppState extends State<CreateOpp> {
                   description = val;
                 },
               ),
-              Text(
-                tags
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                  "Selected Tags: " + tags,
+                ),
               ),
               DropdownButton<String>(
                 value: 'Select Tag',
@@ -165,10 +167,11 @@ class CreateOppState extends State<CreateOpp> {
                 }).toList(),
               ),
               ButtonTheme(
-                child: ElevatedButton(
+                child: RaisedButton(
+                  color: Colors.blue[200],
                   child: Text(
                     'Add Event',
-                    style: TextStyle(fontSize: 30.0, backgroundColor: Colors.blue, color: Colors.white),
+                    style: TextStyle(fontSize: 30.0, color: Colors.white),
                   ),
                   onPressed: () async {
                     try {
