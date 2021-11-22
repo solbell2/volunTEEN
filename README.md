@@ -64,4 +64,5 @@ Official Flutter Documentation,
 samples, guidance on mobile development, and a full API reference.
 
 Compiler and Emulator used: [Android Studio](https://developer.android.com/studio)
+
 Firebase (Directly redirects to volunTEEN console which might be private. Direct access to the volunTEEN Firebase is not required): [Firebase](https://console.firebase.google.com/u/0/project/volunteen-d14f0/overview)
