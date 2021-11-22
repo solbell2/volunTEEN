@@ -3,7 +3,7 @@ By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 [Devpost Metrohacks Site](https://devpost.com/software/volunteen-7s5nmj)
 
 
-### Execution
+### Stable Execution:
 To execute the project, download the code on the main master branch and unzip the folder. Open Android Studio -> File -> Open, and find the extracted folder (This should have an Android logo on the file). Make sure to have Dart SDK and any Flutter comilation plugins/SDKs required to run the project (Prefered versions: Flutter v2.2.1 and Dart 2.13.1). Ensure that full Flutter and Dart support is available on your machine and Android Studio (Android Studio Plugin Installation: File -> Settings -> Editor -> Plugins -> Marketplace -> Flutter -> Install). Additional support and any potential issues are discussed below.
 
 Dart and Flutter Support: Dart support must be enabled on the project. To do this, install Dart support by installing Flutter located on the Flutter site and installing the Flutter plugin on Android Studio. The SDK should be in .zip located in the ../bin. Once everything is setup, you should be prompted by a blue overlay to enable Dart support unless it is already enabled. From there, a 'pub.get has not been run' message might appear. From there just ignore the message and debug on an emulator as the required pub dependencies will installed automatically on compilation. To preview the code, please locate the code specifications and dependency installations below. 
@@ -50,7 +50,7 @@ flutter:
 
 ```
 
-## Flutter Resources
+### Flutter Resources
 
 This project is a Flutter application that allows a community to create local volunteering options, both online and virtually, and gives students the ability to sign up for them. Organizers have the ability to verify a student's presence, view attendees, and perform various admin powers. Login and signup handled under a Firebase Authentication system and all additinal objects stored under a Firebase Database system. 
 
