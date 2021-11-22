@@ -1,9 +1,11 @@
-# Metrohacks Hackaton: 11/21/21
-## Volunteering app made at Metro Hacks
-
+# Metrohacks Hackaton: 11/21/21 - Volunteering app made at Metro Hacks
 By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang
 
-##
+### Code Location:
+Flutter project location is under libs. This holds all of the code we created. 
+```file
+ ../volunTEEN/lib/
+```
 
 ## Flutter Resources
 
