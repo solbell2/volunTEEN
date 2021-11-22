@@ -1,5 +1,5 @@
 # Metrohacks Hackaton: 11/21/21 - Volunteering App at Metrohacks
-By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang
+By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 [Devpost Metrohacks Site](https://devpost.com/software/volunteen-7s5nmj)
 
 ### Code Specifications:
