@@ -2,13 +2,13 @@
 By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 [Devpost Metrohacks Site](https://devpost.com/software/volunteen-7s5nmj)
 
-<h6> Resources<br />
+<h5> Resources<br />
   
 - [App Showcase -  YouTube](https://youtu.be/icZ8hjPbFew)<br />
 - [Final Source Code - GitHub](https://github.com/kelseyxsun/volunTEEN)<br />
 - [Volunteen Documentation](https://github.com/kelseyxsun/volunTEEN/blob/master/README.md)<br/>
 
-  <h5> Developers<br />
+<h5> Developers<br />
     
   Younger than 18 years old (< 18): </br>
 - [Michael Liu (Freshman)](https://devpost.com/bearr) <br />
