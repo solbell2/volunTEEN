@@ -43,21 +43,20 @@ class EventDetailsState extends State<EventDetails> {
       body: Container(
         child: Column(
           children: <Widget>[
-
-            Container(
-                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
-                color: Colors.lightBlue[100],
-                child: Text(
-                    "Description",
-                    textAlign: TextAlign.center,
-                    style : TextStyle(
-                      fontSize: 18,
-                    )
-                )
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
+              child: Text(
+                'Description',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
 
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+              padding: EdgeInsets.symmetric(vertical: 80.0, horizontal: 150.0),
               child: Text(
                 info.description,
                 textAlign: TextAlign.center,
@@ -65,41 +64,41 @@ class EventDetailsState extends State<EventDetails> {
               ),
             ),
 
-            Container(
-                child: Text(
-                    "Location",
-                    textAlign: TextAlign.center,
-                    style : TextStyle(
-                      fontSize: 18,
-                    ),),
-                padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 160.0),
-                color: Colors.lightBlue[100],
-            ),
-
-
-
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 75.0),
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
               child: Text(
-                "${info.address}",
+                'Location',
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
 
-            Container(
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
               child: Text(
-                "  Tags  ",
+                "${info.address}",
                 textAlign: TextAlign.center,
-                style : TextStyle(
-                  fontSize: 18,
-                ),),
-              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 170.0),
-              color: Colors.lightBlue[100],
+                style: const TextStyle(fontSize: 15),
+              ),
             ),
 
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
+              child: Text(
+                'Tags',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
               child: Text(
                 "${info.tags}",
                 textAlign: TextAlign.center,
@@ -107,16 +106,16 @@ class EventDetailsState extends State<EventDetails> {
               ),
             ),
 
-            Container(
-                padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 100.0),
-                color: Colors.lightBlue[100],
-                child: Text(
-                    "Date & Time",
-                    textAlign: TextAlign.center,
-                    style : TextStyle(
-                      fontSize: 18,
-                    )
-                )
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 150.0),
+              child: Text(
+                'Time',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
 
             Padding(
