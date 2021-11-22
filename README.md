@@ -1,8 +1,9 @@
 # Metrohacks Hackaton: 11/21/21
-
-<p3> Volunteering app made at Metro Hacks </p3>
+## Volunteering app made at Metro Hacks
 
 By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang
+
+##
 
 ## Flutter Resources
 
