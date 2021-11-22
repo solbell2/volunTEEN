@@ -7,12 +7,12 @@ By: Michael Liu, Eshan Singhal, Kelsey Sun, Angela Yang </br>
 - [Final Source Code - GitHub](https://github.com/kelseyxsun/volunTEEN)<br />
 - [Volunteen Documentation](https://github.com/kelseyxsun/volunTEEN/blob/master/README.md)<br/>
 
-<h6> Developers
-Younger than 18 years old (< 18): 
-- [Michael Liu](https://devpost.com/bearr) <br />
-- [Kelsey Sun](https://devpost.com/kelseysun13) <br />
-- [Eshan Singhal](https://devpost.com/eshansinghal05) <br />
-- [Angela Yang](https://devpost.com/angelayang297) <br />
+  <h6> Developers </h6>
+  Younger than 18 years old (< 18): </br>
+- [Michael Liu (Freshman)](https://devpost.com/bearr) <br />
+- [Kelsey Sun (Junior)](https://devpost.com/kelseysun13) <br />
+- [Eshan Singhal (Junior)](https://devpost.com/eshansinghal05) <br />
+- [Angela Yang (Sophmore)](https://devpost.com/angelayang297) <br />
 
 ### Stable Execution:
 To execute the project, download the code on the main master branch and unzip the folder. Open Android Studio -> File -> Open, and find the extracted folder (This should have an Android logo on the file). Make sure to have Dart SDK and any Flutter comilation plugins/SDKs required to run the project (Prefered versions: Flutter v2.2.1 and Dart 2.13.1). Ensure that full Flutter and Dart support is available on your machine and Android Studio (Android Studio Plugin Installation: File -> Settings -> Editor -> Plugins -> Marketplace -> Flutter -> Install). Additional support and any potential issues are discussed below.
